@@ -16,7 +16,10 @@ class Room(models.Model):
     description = models.TextField(null=True, blank=True)       #false is default; desc is nullable
     #participants =
     updated = models.DateTimeField(auto_now=True)               #snapshot on everytime we save this item
-    creted = models.DateTimeField(auto_now_add=True)            #snapshot when created
+    created = models.DateTimeField(auto_now_add=True)            #snapshot when created
+
+    class Meta:
+        ordering = ['-updated', '-created']                     # - means desc, no dash means asc
 
     def __str__(self):
         return self.name
