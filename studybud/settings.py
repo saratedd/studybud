@@ -30,6 +30,11 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# superuser
+# django
+# django@mail.com
+# djangotut
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
