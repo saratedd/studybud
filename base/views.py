@@ -72,7 +72,6 @@ def room(request, pk):
     participants = room.participants.all()
     if request.method == 'POST':
         message = Message.objects.create(
-            # user, room, body
             user=request.user,
             room=room,
             body=request.POST.get('body')                             # input field in room.html
