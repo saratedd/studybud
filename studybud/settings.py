@@ -35,6 +35,12 @@ ALLOWED_HOSTS = []
 # django@mail.com
 # djangotut
 
+# tom
+# tomspass
+
+# erika
+# djangotut
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
